@@ -1,0 +1,35 @@
+site_name: Yoda PA
+site_url: https://yoda.manparvesh.com
+repo_url: https://github.com/manparvesh/yoda
+repo_name: manparvesh/yoda
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    primary: 'teal'
+    accent: 'purple'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - toc.integrate
+    - instant_loading
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
+nav:
+  - Home: index.md
+  - Documentation:
+      - Config Management: config.md
+      - Plugin Management: plugins.md
+      - Plugin list: pluginlist.md
+  - About:
+      - Contributors: contributors.md
+      - License: license.md
